@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Login from './components/Login';
+import OTP from './components/OTP';
+import SocialEvents from './components/SocialEvents';
+import CurateEvent from './components/CurateEvent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path='/' element={<Login/>}></Route>
+        <Route path='/otp' element={<OTP/>}></Route>
+        <Route path='/social-events' element={<SocialEvents/>}></Route>
+        <Route path='/curate-events' element={<CurateEvent/>}></Route>
+      </Routes>
+    </>
   );
 }
 
