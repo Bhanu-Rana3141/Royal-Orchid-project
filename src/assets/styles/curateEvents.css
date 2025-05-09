@@ -202,8 +202,12 @@
     width: 30%;
 }
 
-@media(max-width : 1050px) {
+@media(max-width : 1060px) {
     .curate-close-Icon {
+        display: none;
+    }
+
+    .currentevent-image-part {
         display: none;
     }
 

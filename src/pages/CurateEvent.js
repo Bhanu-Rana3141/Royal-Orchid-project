@@ -116,7 +116,7 @@ export default function CurateEvent() {
                     </div>
                 )}
 
-                <div className='otp-right-part'>
+                <div className='otp-right-part currentevent-image-part'>
                     <RightImage image={curatebgimg} />
                     <Icons />
                 </div>
