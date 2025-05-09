@@ -1,18 +1,11 @@
 import React from 'react'
-import '../assets/css/global.css'
 import loginImg from '../assets/images/loginImg.png'
 import otp from '../assets/images/otp.png'
-import RightImage from './RightImage'
-import { useNavigate } from 'react-router-dom'
-import Icons from './Icons'
+import RightImage from '../components/RightImage'
+import Icons from '../components/Icons'
+import SubmitButton from '../components/SubmitButton'
 
 export default function OTP() {
-
-    const navigate = useNavigate();
-
-    const handleSubmit = () => {
-        navigate('/social-events')
-    }
 
     return (
         <>
@@ -32,9 +25,7 @@ export default function OTP() {
                             <input className='box'></input>
                         </div>
                         <div className='resend-otp'>If you did not receive any code? <span>Resend</span></div>
-                        <div className='submit-btn otp-submit-btn'>
-                            <button onClick={handleSubmit}>SUBMIT</button>
-                        </div>
+                        <SubmitButton label="SUBMIT" to="/social-events" className='submit-btn otp-submit-btn'/>
                     </div>
 
                     <div className='otp-left-part2'>
@@ -50,7 +41,7 @@ export default function OTP() {
                 </div>
 
                 <div className='otp-right-part'>
-                    <RightImage/>
+                    <RightImage image={loginImg}/>
                     <Icons/>
                 </div>
             </div>

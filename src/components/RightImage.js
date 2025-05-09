@@ -1,11 +1,9 @@
 import React from 'react'
-import loginImg from '../assets/images/loginImg.png'
-import '../assets/css/global.css'
 
-export default function RightImage() {
+export default function RightImage({image}) {
   return (
     <>
-      <img src={loginImg} alt='right-image'></img>
+      <img src={image} alt='right-image'></img>
     </>
   )
 }

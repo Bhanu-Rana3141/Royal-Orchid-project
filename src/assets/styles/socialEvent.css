@@ -1,0 +1,324 @@
+.social-events {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+
+.socialevents-left-part {
+    width: 42%;
+    height: 100%;
+    background-color: #fff;
+    border-bottom-right-radius: 48px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    font-size: 14px;
+}
+
+.socialevents-left-part-text {
+    display: flex;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.socialevents-left-part1 {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.socialevents-container1-div1 img,
+.socialevents-container2-div1 img {
+    height: 30px;
+}
+
+.socialevents-container1 {
+    margin-top: 12px;
+}
+
+.socialevents-container1,
+.socialevents-container2 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialevents-container1:hover,
+.socialevents-container2:hover {
+    background-color: #8A027D1A;
+    color: #8A027D;
+}
+
+.socialevents-container1-div2,
+.socialevents-container2-div2 {
+    padding-top: 10px;
+}
+
+.socialevents-left-part2 {
+    width: 80%;
+    padding: 20px 30px;
+    border-left: 1px solid #00000033;
+    overflow-y: auto;
+}
+
+.socialevent-heading {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.preference-para,
+.select-community,
+.associate-program,
+.event-type,
+.guests,
+.seating-arrangement {
+    padding-top: 15px;
+}
+
+.wedding-other-input {
+    padding-top: 8px;
+}
+
+.wedding-other-input {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-button {
+    width: 49%;
+    border: 1px solid #1C1B1C4D;
+    border-radius: 16px;
+    padding: 12px;
+    background-color: #fff;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+
+.event-button span {
+    padding-left: 10px;
+}
+
+.event-button:hover {
+    background-color: #8A027D;
+    color: #FFFFFF;
+    font-weight: 350;
+    cursor: pointer;
+}
+
+.event-button input[type="radio"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+    flex-shrink: 0;
+}
+
+.event-button input[type="radio"]:checked {
+    border-color: #8A027D;
+    background-color: white;
+}
+
+.event-button input[type="radio"]:checked::after {
+    content: '✓';
+    position: absolute;
+    color: #8A027D;
+    font-size: 14px;
+    left: 2px;
+    top: -3px;
+    font-weight: 900;
+}
+
+/* SELECTION OPTIONS */
+.dropdown-wrapper {
+    position: relative;
+    padding-top: 8px;
+}
+
+.custom-select-box {
+    width: 100%;
+    padding: 12px;
+    border-radius: 16px;
+    outline: none;
+    border: 1px solid #E7E7E7;
+    background-color: #F3F3F3;
+    appearance: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.custom-options {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #E7E7E7;
+    border-radius: 8px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    z-index: 999;
+    max-height: 100px;
+    overflow-y: auto;
+    list-style: none;
+    padding-left: 0;
+}
+
+.custom-option {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 12px;
+}
+
+.custom-option:hover {
+    background-color: #F6F6F6;
+}
+
+.selectIcon {
+    font-size: 12px;
+    color: #888;
+}
+/*  */
+
+.event-dates {
+    width: 100%;
+    padding-top: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-dates input {
+    background-color: #F3F3F3;
+    border: 1px solid #F3F3F3;
+}
+
+.input-container {
+    position: relative;
+    width: 48%;
+}
+
+.input-container input {
+    width: 100%;
+    border: 1px solid #1C1B1C4D;
+    border-radius: 16px;
+    padding: 12px;
+    font-size: 14px;
+    outline: none;
+}
+
+.program {
+    background-color: #fff;
+}
+
+.program:hover {
+    appearance: none;
+    background-color: #E7E7E7;
+}
+
+.calendar-icon {
+    position: absolute;
+    z-index: 10;
+    right: 16px;
+    top: 60%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #5E5E5E;
+}
+
+.calendar-icon {
+    right: 12px;
+    font-size: 12px;
+    top: 50%;
+}
+
+.seating-arrangement-container {
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 5px;
+}
+
+.seating-arrangement1 {
+    width: 49%;
+    border: 1px solid #1C1B1C4D;
+    border-radius: 16px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.seating-arrangement1:hover {
+    border: 1px solid #8A027D;
+}
+
+.seating-arrangment-div1 {
+    width: 80%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.seating-text {
+    padding-left: 8px;
+}
+
+.seating-arrangment-div2 {
+    width: 10%;
+}
+
+.seating1 img {
+    height: 25px;
+}
+
+.seatingcommon img {
+    height: 16px;
+}
+
+.socialevent-btn {
+    padding: 15px;
+    border-top: 1px solid #00000033;
+}
+
+.socialevent-btn:hover {
+    border: none;
+}
+
+@media(max-width: 921px) {
+    .seating-arrangement1 {
+        width: 100%;
+    }
+}
+
+@media(max-width: 884px) {
+    .input-container input {
+        font-size: 12px;
+    }
+
+    .calendar-icon {
+        font-size: 10px;
+    }
+}
+
+@media(max-width : 834px) {
+    .socialevents-left-part {
+        width: 100%;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 790px) {
+    .calendar-icon {
+        font-size: 10px;
+    }
+}
