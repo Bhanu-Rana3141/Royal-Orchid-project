@@ -14,7 +14,7 @@ function Login() {
             <div className='otp-left-part'>
                 <div className='left-part1'> 
                     <div className='login-heading'>
-                        <h2 className='mt-4 banquets-cart'>Banquets Cart</h2>
+                        <h2 className='mt-2 banquets-cart'>Banquets Cart</h2>
                         <div className="mb-3 hotel-heading1">Hotel Royal Orchid, Bangalore</div>
                     </div>
 
